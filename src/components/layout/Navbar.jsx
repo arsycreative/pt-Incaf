@@ -53,6 +53,7 @@ export function Navbar() {
                   "object-contain object-left transition-all duration-300",
                   (!scrolled && !isLightPage) && "filter brightness-0 invert opacity-90"
                 )}
+                sizes="(max-width: 640px) 128px, 160px"
                 priority
               />
             </div>

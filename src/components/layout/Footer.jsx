@@ -124,16 +124,10 @@ export function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 md:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 py-5 text-center">
           <p className="text-white/40 text-sm">
             © {year} {COMPANY.name}. All rights reserved.
           </p>
-          <Link
-            href="/privacy"
-            className="text-white/40 hover:text-white/60 text-sm transition-colors"
-          >
-            Privacy Policy
-          </Link>
         </div>
       </div>
     </footer>

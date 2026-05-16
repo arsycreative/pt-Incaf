@@ -76,7 +76,7 @@ export default function SolutionsPage() {
         title="Lebih dari Supplier — Mitra Solusi Industri Anda"
         subtitle="Kami tidak hanya menyediakan produk, tapi juga membantu menemukan formulasi yang tepat, efisien, dan sesuai standar."
         breadcrumbCurrent="Solusi"
-        imageSrc="https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?q=80&w=2070"
+        imageSrc="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?q=80&w=2070"
       />
 
       {/* Problem -> Solution Section */}

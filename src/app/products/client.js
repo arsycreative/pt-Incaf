@@ -21,7 +21,7 @@ export default function ProductsHub() {
         title="Katalog Produk"
         subtitle="Semua kebutuhan chemical Anda ada di satu tempat — dari food grade sampai bahan industri."
         breadcrumbCurrent="Produk"
-        imageSrc="https://images.unsplash.com/photo-1542736667-069246bce584?q=80&w=2070"
+        imageSrc="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?q=80&w=2070"
       />
 
       <section className="py-20 bg-gray-50 min-h-screen">

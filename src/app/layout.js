@@ -32,8 +32,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="id" className={`${fontSans.variable} ${fontSerif.variable} antialiased`}>
-      <body className="flex flex-col font-sans">
+    <html lang="id" className={`${fontSans.variable} ${fontSerif.variable} antialiased`} data-scroll-behavior="smooth">
+      <body className="flex flex-col font-sans" suppressHydrationWarning>
         <SmoothScrollProvider>
           <Navbar />
           <main className="flex-1">{children}</main>

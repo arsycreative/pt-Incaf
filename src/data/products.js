@@ -54,14 +54,14 @@ export const CATEGORY_METADATA = {
     tagline: 'Bahan tambahan pangan terpilih — diuji kualitasnya, aman untuk industri Anda.',
     intro: 'Menyediakan berbagai food additive untuk industri makanan dan minuman — dari pewarna, fosfor, stabilizer, emulsifier, hingga pemanis modern.',
     industries: 'Baked Goods, Beverages, Dairy, Noodles, Seasoning, Confectionery, Meat & Seafood Processing, dll.',
-    headerImage: 'https://images.unsplash.com/photo-1576013627993-9c8e8bb335fc?q=80&w=2070',
+    headerImage: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=2070',
   },
   'feed-additive': {
     title: 'Feed Additive',
     tagline: 'Nutrisi yang tepat untuk ternak yang sehat dan produktif.',
     intro: 'Solusi nutrisi dan aditif pakan berkualitas tinggi untuk mengoptimalkan kesehatan dan produktivitas di industri peternakan dan akuakultur.',
     industries: 'Poultry, Sapi, Babi, Akuakultur',
-    headerImage: 'https://images.unsplash.com/photo-1595805568574-88aa115eb305?q=80&w=2070',
+    headerImage: 'https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?q=80&w=2070',
   },
   'fertilizer': {
     title: 'Fertilizer Speciality',
@@ -75,7 +75,7 @@ export const CATEGORY_METADATA = {
     tagline: 'Bahan kimia industri dengan kualitas terjamin — untuk berbagai kebutuhan produksi Anda.',
     intro: 'Melayani kebutuhan bahan kimia umum untuk industri manufaktur, pengolahan air, agrikultur, dan sektor lainnya dengan standar tinggi.',
     industries: 'Manufaktur, Water Treatment, Pharmacy, Homecare',
-    headerImage: 'https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?q=80&w=2070',
+    headerImage: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?q=80&w=2070',
   }
 }
 

@@ -136,7 +136,7 @@ Dengan beralih dari konsep "Protein Kasar" ke formulasi "Asam Amino Ideal", pabr
     category: 'General',
     date: '15 April 2026',
     readTime: '5 min read',
-    image: 'https://images.unsplash.com/photo-1586528116311-ad8ed7c80a71?q=80&w=2070',
+    image: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=2070',
     content: `
 Penyimpanan bahan kimia industri (General Chemical) bukanlah sekadar menumpuk barang di dalam gudang. Karakteristik bahan kimia yang beragam—mulai dari yang mudah terbakar (flammable), korosif, hingga reaktif—menuntut standar operasional (SOP) yang sangat ketat untuk mencegah insiden kebakaran, ledakan, atau keracunan.
 
