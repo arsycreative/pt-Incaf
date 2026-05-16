@@ -10,7 +10,8 @@ export function PageHeader({
   title, 
   subtitle, 
   breadcrumbCurrent, 
-  imageSrc = "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070" 
+  imageSrc = "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070",
+  waveColor = "text-gray-50"
 }) {
   const reduced = useReducedMotion()
 
@@ -89,6 +90,15 @@ export function PageHeader({
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Elegant Wave Divider */}
+      <div className={`absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-none z-20 ${waveColor}`}>
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none" className="w-full h-[40px] md:h-[70px]">
+          <path fill="currentColor" opacity="0.2" d="M0,40 C320,100 480,0 960,40 C1200,60 1320,20 1440,40 L1440,100 L0,100 Z" />
+          <path fill="currentColor" opacity="0.4" d="M0,60 C240,100 480,20 720,50 C960,80 1200,0 1440,30 L1440,100 L0,100 Z" />
+          <path fill="currentColor" d="M0,80 C320,120 480,20 960,60 C1200,80 1320,40 1440,60 L1440,100 L0,100 Z" />
+        </svg>
       </div>
     </section>
   )

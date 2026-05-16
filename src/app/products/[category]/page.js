@@ -47,6 +47,7 @@ export default async function CategoryPage({ params }) {
         subtitle={meta.tagline}
         breadcrumbCurrent={meta.title}
         imageSrc={meta.headerImage}
+        waveColor="text-white"
       />
 
       {/* Category Intro */}

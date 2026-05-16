@@ -18,6 +18,7 @@ export default function AboutPage() {
         subtitle="Lebih dari sekadar supplier — kami adalah mitra bisnis jangka panjang Anda."
         breadcrumbCurrent="Tentang Kami"
         imageSrc="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070"
+        waveColor="text-white"
       />
       <CompanyStory />
       <VisionMission />

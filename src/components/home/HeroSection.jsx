@@ -122,6 +122,15 @@ export function HeroSection() {
           ))}
         </motion.div>
       </div>
+
+      {/* Elegant Wave Divider */}
+      <div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-none z-20 text-gray-50">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none" className="w-full h-[50px] md:h-[90px]">
+          <path fill="currentColor" opacity="0.2" d="M0,40 C320,100 480,0 960,40 C1200,60 1320,20 1440,40 L1440,100 L0,100 Z" />
+          <path fill="currentColor" opacity="0.4" d="M0,60 C240,100 480,20 720,50 C960,80 1200,0 1440,30 L1440,100 L0,100 Z" />
+          <path fill="currentColor" d="M0,80 C320,120 480,20 960,60 C1200,80 1320,40 1440,60 L1440,100 L0,100 Z" />
+        </svg>
+      </div>
     </section>
   )
 }
