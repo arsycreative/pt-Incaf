@@ -2,13 +2,19 @@
 
 import { useRef, useEffect, useState } from 'react'
 import { motion, useReducedMotion, useInView } from 'framer-motion'
-import { Package, Building2, Globe } from 'lucide-react'
-import { fadeUp } from '@/lib/animations'
+import { Package, Building2, Globe, ShieldCheck, Truck, Award } from 'lucide-react'
+import { fadeUp, stagger } from '@/lib/animations'
 
 const stats = [
   { value: 50, suffix: '+', label: 'Produk Tersedia', icon: Package },
   { value: 17, suffix: '+', label: 'Industri Dilayani', icon: Building2 },
   { value: 10, suffix: '+', label: 'Negara Asal Supplier', icon: Globe },
+]
+
+const trustPillars = [
+  { icon: ShieldCheck, label: 'Sertifikasi Global', desc: 'Produk terverifikasi standar internasional' },
+  { icon: Truck, label: 'Pengiriman Nasional', desc: 'Distribusi ke seluruh wilayah Indonesia' },
+  { icon: Award, label: 'Jaminan Kualitas', desc: 'QC ketat di setiap batch pengiriman' },
 ]
 
 function AnimatedCounter({ target, suffix, inView }) {
@@ -43,16 +49,32 @@ export function TrustSection() {
   const inView = useInView(ref, { once: true, margin: '-100px' })
 
   return (
-    <section id="trust" className="py-20 bg-gray-50" ref={ref}>
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
+    <section id="trust" className="relative py-24 overflow-hidden" ref={ref}>
+      {/* Dark navy background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-navy-dark via-navy to-navy-dark" />
+      
+      {/* Decorative orbs */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-amber rounded-full blur-[120px] opacity-10 -translate-y-1/2 translate-x-1/3 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-80 h-80 bg-green rounded-full blur-[100px] opacity-10 translate-y-1/2 -translate-x-1/3 pointer-events-none" />
+      
+      {/* Dot pattern */}
+      <div 
+        className="absolute inset-0 opacity-[0.04]"
+        style={{
+          backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)',
+          backgroundSize: '32px 32px',
+        }}
+      />
+
+      <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-14">
+        <div className="text-center mb-16">
           <motion.span
             variants={reduced ? {} : fadeUp}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="text-green font-semibold text-xs uppercase tracking-widest mb-2 block"
+            className="text-green font-semibold text-xs uppercase tracking-widest mb-3 block"
           >
             Kepercayaan
           </motion.span>
@@ -62,7 +84,7 @@ export function TrustSection() {
             whileInView="show"
             viewport={{ once: true }}
             custom={1}
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
           >
             Dipercaya oleh Pelaku Industri
           </motion.h2>
@@ -72,15 +94,15 @@ export function TrustSection() {
             whileInView="show"
             viewport={{ once: true }}
             custom={2}
-            className="text-gray-500 max-w-2xl mx-auto"
+            className="text-white/60 max-w-2xl mx-auto text-lg"
           >
             Angka-angka yang mencerminkan komitmen kami dalam menyediakan solusi
             speciality chemical terbaik untuk industri Indonesia.
           </motion.p>
         </div>
 
-        {/* Stats Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-3xl mx-auto">
+        {/* Stats Grid — Glass Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto mb-20">
           {stats.map((stat, i) => {
             const Icon = stat.icon
             return (
@@ -91,26 +113,56 @@ export function TrustSection() {
                 whileInView="show"
                 viewport={{ once: true }}
                 custom={i}
-                className="text-center group"
+                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center group hover:bg-white/10 transition-all duration-500"
               >
-                <div className="w-16 h-16 rounded-2xl bg-navy/10 flex items-center justify-center mx-auto mb-4
-                                group-hover:bg-navy group-hover:scale-105 transition-all duration-300">
-                  <Icon className="w-7 h-7 text-navy group-hover:text-white transition-colors duration-300" />
+                <div className="w-14 h-14 rounded-xl bg-white/10 flex items-center justify-center mx-auto mb-5
+                                group-hover:bg-green group-hover:scale-110 transition-all duration-500">
+                  <Icon className="w-7 h-7 text-white/70 group-hover:text-white transition-colors duration-500" />
                 </div>
-                <div className="text-4xl md:text-5xl font-bold text-navy mb-2">
+                <div className="text-4xl md:text-5xl font-bold text-white mb-2">
                   {reduced ? (
                     <span>{stat.value}{stat.suffix}</span>
                   ) : (
                     <AnimatedCounter target={stat.value} suffix={stat.suffix} inView={inView} />
                   )}
                 </div>
-                <div className="text-gray-500 text-sm font-medium uppercase tracking-wide">
+                <div className="w-10 h-0.5 bg-gradient-to-r from-amber to-orange mx-auto mb-3 rounded-full" />
+                <div className="text-white/50 text-sm font-medium uppercase tracking-widest">
                   {stat.label}
                 </div>
               </motion.div>
             )
           })}
         </div>
+
+        {/* Trust Pillars — Horizontal Strip */}
+        <motion.div
+          variants={reduced ? {} : stagger}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto"
+        >
+          {trustPillars.map((pillar, i) => {
+            const Icon = pillar.icon
+            return (
+              <motion.div
+                key={pillar.label}
+                variants={reduced ? {} : fadeUp}
+                custom={i}
+                className="flex items-center gap-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl px-6 py-5 hover:bg-white/10 transition-all duration-300"
+              >
+                <div className="w-12 h-12 rounded-xl bg-green/20 flex items-center justify-center shrink-0">
+                  <Icon className="w-6 h-6 text-green" />
+                </div>
+                <div>
+                  <div className="text-white font-semibold text-sm">{pillar.label}</div>
+                  <div className="text-white/50 text-xs mt-0.5">{pillar.desc}</div>
+                </div>
+              </motion.div>
+            )
+          })}
+        </motion.div>
       </div>
     </section>
   )

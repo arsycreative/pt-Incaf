@@ -59,8 +59,8 @@ export function CompanyStory() {
           >
             <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070"
-                alt="Tim profesional PT Incaf Nutri Solusindo berdiskusi"
+                src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2070"
+                alt="Kantor profesional PT Incaf Nutri Solusindo"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-700"
                 sizes="(max-width: 1024px) 100vw, 50vw"

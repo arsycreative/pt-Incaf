@@ -26,8 +26,6 @@ export function HeroSection() {
         />
         {/* Dark gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-br from-navy-dark/90 via-navy/80 to-navy-dark/70" />
-        {/* Bottom fade for smooth transition */}
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gray-50 to-transparent" />
       </div>
 
       {/* Content */}
@@ -104,18 +102,22 @@ export function HeroSection() {
           </motion.div>
         </div>
 
-        {/* Stats Bar */}
+        {/* Stats Bar — Glass Cards */}
         <motion.div
           variants={reduced ? {} : fadeUp}
           initial="hidden"
           animate="show"
           custom={5}
-          className="mt-16 md:mt-24 grid grid-cols-3 gap-6 max-w-lg"
+          className="mt-16 md:mt-24 flex flex-wrap gap-4 max-w-2xl"
         >
-          {COMPANY.stats.map((stat) => (
-            <div key={stat.label} className="text-center md:text-left">
+          {COMPANY.stats.map((stat, i) => (
+            <div
+              key={stat.label}
+              className="bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl px-6 py-5 flex-1 min-w-[120px] text-center md:text-left hover:bg-white/15 transition-colors duration-300"
+            >
               <div className="text-3xl md:text-4xl font-bold text-white mb-1">{stat.value}</div>
-              <div className="text-xs md:text-sm text-white/50 uppercase tracking-wide">{stat.label}</div>
+              <div className="w-8 h-0.5 bg-gradient-to-r from-amber to-orange mb-2 mx-auto md:mx-0 rounded-full" />
+              <div className="text-[11px] md:text-xs text-white/60 uppercase tracking-widest font-medium">{stat.label}</div>
             </div>
           ))}
         </motion.div>

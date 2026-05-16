@@ -25,11 +25,21 @@ export default function IndustriesPage() {
           
           {/* Header */}
           <div className="text-center max-w-3xl mx-auto mb-16">
+            <motion.span
+              variants={reduced ? {} : fadeUp}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="text-green font-semibold text-xs uppercase tracking-widest mb-3 block"
+            >
+              Industri yang Kami Layani
+            </motion.span>
             <motion.h2 
               variants={reduced ? {} : fadeUp}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
+              custom={1}
               className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
             >
               Memahami Bahasa Industri Anda

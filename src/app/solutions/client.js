@@ -76,7 +76,7 @@ export default function SolutionsPage() {
         title="Lebih dari Supplier — Mitra Solusi Industri Anda"
         subtitle="Kami tidak hanya menyediakan produk, tapi juga membantu menemukan formulasi yang tepat, efisien, dan sesuai standar."
         breadcrumbCurrent="Solusi"
-        imageSrc="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?q=80&w=2070"
+        imageSrc="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?q=80&w=2070"
       />
 
       {/* Problem -> Solution Section */}
@@ -84,11 +84,21 @@ export default function SolutionsPage() {
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           
           <div className="text-center max-w-3xl mx-auto mb-16">
+            <motion.span
+              variants={reduced ? {} : fadeUp}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="text-green font-semibold text-xs uppercase tracking-widest mb-3 block"
+            >
+              Tantangan & Solusi
+            </motion.span>
             <motion.h2 
               variants={reduced ? {} : fadeUp}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
+              custom={1}
               className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
             >
               Solusi Berdasarkan Kebutuhan
@@ -152,11 +162,21 @@ export default function SolutionsPage() {
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           
           <div className="text-center max-w-3xl mx-auto mb-20">
+            <motion.span
+              variants={reduced ? {} : fadeUp}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="text-green font-semibold text-xs uppercase tracking-widest mb-3 block"
+            >
+              Alur Kerja
+            </motion.span>
             <motion.h2 
               variants={reduced ? {} : fadeUp}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
+              custom={1}
               className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
             >
               Proses Kerja 5 Langkah
