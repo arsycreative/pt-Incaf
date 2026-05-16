@@ -36,6 +36,7 @@ export function Footer() {
                   alt="PT. Incaf Nutri Solusindo Logo"
                   fill
                   className="object-contain object-left filter brightness-0 invert"
+                  sizes="(max-width: 640px) 128px, 160px"
                 />
               </div>
             </div>
