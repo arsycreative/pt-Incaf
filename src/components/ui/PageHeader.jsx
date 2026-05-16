@@ -51,7 +51,7 @@ export function PageHeader({
             initial="hidden"
             animate="show"
             custom={1}
-            className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight"
+            className="font-serif text-4xl md:text-5xl font-bold text-white mb-4 leading-tight"
           >
             {title}
           </motion.h1>

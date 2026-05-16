@@ -75,7 +75,7 @@ Dengan formulasi *compound*, Anda mendapatkan kelarutan sempurna dari SHMP dan d
     category: 'Agriculture',
     date: '24 April 2026',
     readTime: '4 min read',
-    image: 'https://images.unsplash.com/photo-1592982537447-6f2334208f34?q=80&w=2070',
+    image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=2070',
     content: `
 Pertanian modern menghadapi tantangan berat: cuaca yang tak menentu, degradasi lahan, dan kebutuhan efisiensi biaya. Di sinilah **Biostimulan** muncul sebagai "game-changer", menjembatani celah yang tidak bisa ditutupi oleh pupuk NPK konvensional (Makro) saja.
 
@@ -99,6 +99,105 @@ Akar tanaman yang sehat bergantung pada mikroba baik di sekitarnya. Biostimulan 
 ## Kesimpulan
 
 Untuk mencapai panen maksimal di era perubahan iklim, aplikasi pupuk makro tidak lagi cukup. Mengintegrasikan biostimulan seperti Asam Amino, Asam Humat, dan Ekstrak Rumput Laut ke dalam program pemupukan Anda adalah investasi cerdas untuk ketahanan hasil panen.
+    `
+  },
+  {
+    slug: 'pentingnya-asam-amino-pakan-ternak',
+    title: 'Pentingnya Asam Amino Esensial dalam Pakan Ternak Unggas',
+    excerpt: 'Meningkatkan efisiensi konversi pakan dan produktivitas unggas melalui suplementasi asam amino yang presisi.',
+    category: 'Feed Industry',
+    date: '20 April 2026',
+    readTime: '4 min read',
+    image: 'https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?q=80&w=2070',
+    content: `
+Dalam industri peternakan unggas komersial modern, biaya pakan dapat mencapai 60-70% dari total biaya produksi. Oleh karena itu, efisiensi konversi pakan (FCR) menjadi metrik yang paling krusial. Salah satu strategi nutrisi terpenting untuk mengoptimalkan FCR adalah melalui suplementasi **Asam Amino Esensial**.
+
+## Mengapa Protein Saja Tidak Cukup?
+
+Secara tradisional, peternak berfokus pada kadar "Protein Kasar" (Crude Protein) dalam menyusun ransum pakan. Namun, unggas sebenarnya tidak membutuhkan protein secara utuh; mereka membutuhkan **asam amino** yang merupakan blok pembangun dari protein tersebut. 
+
+Bahan pakan nabati seperti bungkil kedelai dan jagung seringkali tidak memiliki profil asam amino yang seimbang. Jika seekor ayam kekurangan satu jenis asam amino esensial saja (disebut *limiting amino acid*), maka seluruh proses pembentukan otot dan telur akan terhambat, meskipun total protein kasarnya tinggi.
+
+## 3 Asam Amino Paling Kritis untuk Unggas
+
+1. **Methionine (Met):** Biasanya merupakan asam amino pembatas pertama pada ransum berbasis jagung-kedelai. Met sangat penting untuk pembentukan bulu, pertumbuhan jaringan, dan produksi telur. Kekurangan Met akan menyebabkan ayam saling mematuk bulu (feather pecking).
+2. **Lysine (Lys):** Berperan sentral dalam sintesis protein otot daging. Keseimbangan antara Lysine dan energi sangat menentukan seberapa banyak dada ayam (breast meat) yang dapat diproduksi.
+3. **Threonine (Thr):** Sangat krusial untuk pemeliharaan sistem imun dan kesehatan usus (intestinal health). Usus yang sehat berarti penyerapan nutrisi yang jauh lebih maksimal.
+
+## Manfaat Ekonomi dan Lingkungan
+
+Dengan beralih dari konsep "Protein Kasar" ke formulasi "Asam Amino Ideal", pabrik pakan dapat menurunkan level protein secara keseluruhan. Penurunan protein kasar sebesar 1-2% yang diimbangi dengan suplementasi asam amino sintetis (seperti DL-Methionine atau L-Lysine HCL) tidak hanya menurunkan biaya bahan baku, tetapi juga mengurangi ekskresi nitrogen (amonia) ke lingkungan kandang, membuat ayam lebih sehat dan kandang tidak berbau tajam.
+    `
+  },
+  {
+    slug: 'panduan-penyimpanan-bahan-kimia-industri',
+    title: 'Panduan Standar Keselamatan Penyimpanan Bahan Kimia Industri',
+    excerpt: 'Memahami protokol keamanan, segregasi (pemisahan), dan manajemen sirkulasi untuk gudang bahan kimia umum.',
+    category: 'General',
+    date: '15 April 2026',
+    readTime: '5 min read',
+    image: 'https://images.unsplash.com/photo-1586528116311-ad8ed7c80a71?q=80&w=2070',
+    content: `
+Penyimpanan bahan kimia industri (General Chemical) bukanlah sekadar menumpuk barang di dalam gudang. Karakteristik bahan kimia yang beragam—mulai dari yang mudah terbakar (flammable), korosif, hingga reaktif—menuntut standar operasional (SOP) yang sangat ketat untuk mencegah insiden kebakaran, ledakan, atau keracunan.
+
+Berikut adalah prinsip dasar yang diterapkan di fasilitas distribusi standar global, termasuk di PT. Incaf Nutri Solusindo.
+
+## 1. Prinsip Segregasi (Pemisahan)
+
+Kesalahan paling fatal dalam manajemen gudang kimia adalah menyimpan bahan berdasarkan abjad (A-Z) dan bukan berdasarkan kompatibilitas kelas bahayanya.
+
+- **Asam (Acids) TIDAK BOLEH berdekatan dengan Basa (Bases/Alkalis).** Percampuran tak sengaja antara keduanya akan menghasilkan reaksi eksotermik (panas) hebat.
+- **Oksidator TIDAK BOLEH berdekatan dengan Bahan Mudah Terbakar.** Oksidator (seperti Hidrogen Peroksida) melepaskan oksigen yang dapat memicu atau memperparah kebakaran pada bahan *flammable* (seperti pelarut organik).
+- **Asam TIDAK BOLEH berdekatan dengan Sianida atau Sulfida.** Reaksinya akan menghasilkan gas beracun mematikan (Hydrogen Cyanide / Hydrogen Sulfide).
+
+## 2. Kontrol Iklim dan Ventilasi
+
+Banyak bahan kimia industri sensitif terhadap suhu dan kelembapan. 
+- Gudang harus memiliki sirkulasi udara yang aktif (exhaust fans) dengan pergantian udara minimum 6 kali per jam untuk mencegah akumulasi uap berbahaya.
+- Hindari paparan sinar matahari langsung (UV) ke kemasan, karena dapat memicu degradasi bahan atau peningkatan tekanan di dalam drum.
+
+## 3. Sistem Secondary Containment
+
+Kebocoran adalah risiko operasional yang harus diantisipasi. Setiap area penyimpanan bahan cair harus dilengkapi dengan *secondary containment* atau tanggul pelindung (bund wall). Kapasitas tanggul ini harus mampu menampung minimal 110% dari volume wadah terbesar di area tersebut, sehingga jika terjadi tumpahan, cairan kimia tidak mengalir ke saluran drainase umum.
+
+## 4. MSDS dan Pelabelan yang Jelas
+
+Setiap palet atau area penyimpanan harus dilengkapi dengan *Material Safety Data Sheet* (MSDS) yang mudah diakses. Label GHS (Globally Harmonized System) wajib terpasang dan terbaca jelas di setiap drum atau jerigen, memuat informasi piktogram bahaya dan instruksi penanganan pertama.
+    `
+  },
+  {
+    slug: 'tren-pemanis-rendah-kalori',
+    title: 'Tren Pemanis Rendah Kalori di Industri Minuman Masa Kini',
+    excerpt: 'Bagaimana produsen minuman (F&B) beradaptasi dengan tren kesehatan konsumen menggunakan pemanis alternatif.',
+    category: 'Food Industry',
+    date: '02 April 2026',
+    readTime: '4 min read',
+    image: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=2070',
+    content: `
+Seiring dengan meningkatnya kesadaran konsumen akan risiko obesitas dan diabetes, serta penerapan cukai minuman berpemanis dalam kemasan (MBDK) di berbagai negara, industri F&B menghadapi tekanan besar untuk mereformulasi produk mereka.
+
+Tantangan terbesarnya? Mengurangi kalori tanpa merusak profil rasa (*taste profile*) manis yang sudah melekat di lidah konsumen. Di sinilah inovasi **Pemanis Rendah Kalori (Low-Calorie Sweeteners)** mengambil peran sentral.
+
+## Evolusi Pemanis Buatan
+
+Pada dekade sebelumnya, pemanis buatan intensitas tinggi seperti *Saccharin* dan *Aspartame* mendominasi pasar minuman diet. Meskipun efektif menurunkan kalori, banyak konsumen mengeluhkan *aftertaste* pahit atau metalik.
+
+Kini, formulator makanan beralih ke generasi pemanis yang lebih modern:
+
+### 1. Sucralose
+Dibuat langsung dari gula asli namun strukturnya diubah sehingga tidak dapat dicerna oleh tubuh (nol kalori). Sucralose memiliki tingkat kemanisan 600 kali lipat dari gula pasir dan tidak menyisakan *aftertaste* pahit. Keunggulan lainnya adalah stabilitasnya yang luar biasa pada suhu tinggi, membuatnya ideal untuk produk yang melalui proses pasteurisasi atau UHT.
+
+### 2. Stevia (Steviol Glycosides)
+Bagi merk yang menargetkan label "100% Natural", Stevia adalah pilihan utama. Diekstrak dari daun tanaman Stevia rebaudiana, pemanis ini sangat populer di kalangan konsumen sadar kesehatan. Namun, Stevia memiliki *aftertaste* yang sedikit khas (licorice/herbal), sehingga seringkali dicampur dengan *Erythritol* untuk membulatkan rasa manisnya.
+
+### 3. Erythritol (Sugar Alcohol)
+Berbeda dengan pemanis intensitas tinggi, Erythritol digunakan sebagai *bulk sweetener*. Bentuk dan volumenya menyerupai gula pasir, memberikan "body" atau tekstur pada minuman yang tidak bisa diberikan oleh Sucralose atau Stevia saja. Erythritol memberikan sensasi dingin (*cooling effect*) di mulut yang sangat cocok untuk minuman teh atau rasa mint.
+
+## Pentingnya "Sweetener Blending"
+
+Rahasia dari minuman rendah kalori modern yang sukses di pasaran bukanlah menggunakan satu jenis pemanis tunggal, melainkan **Blending** (Pencampuran). 
+
+Dengan mencampur Sucralose dan Acesulfame-K, misalnya, produsen dapat meniru kurva kemanisan (sweetness profile) sirup jagung atau gula tebu dengan sangat akurat. Pendekatan formulasi yang tepat adalah kunci memenangkan hati—dan lidah—konsumen era modern.
     `
   }
 ]

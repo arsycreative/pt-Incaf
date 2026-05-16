@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { motion, useReducedMotion } from 'framer-motion'
 import { ArrowRight, CheckCircle2, FlaskConical, Wheat, Sprout, Factory, MessagesSquare, Search, FileText, ShoppingCart, Truck } from 'lucide-react'
+import { FaWhatsapp } from 'react-icons/fa'
 import { PageHeader } from '@/components/ui/PageHeader'
 import { fadeUp, stagger } from '@/lib/animations'
 import { generateWhatsAppLink } from '@/lib/whatsapp'
@@ -212,8 +213,16 @@ export default function SolutionsPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-gradient-to-r from-navy to-navy-dark">
-        <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
+      <section className="relative py-20 overflow-hidden">
+        {/* Gradient Background */}
+        <div className="absolute inset-0 bg-gradient-to-r from-amber to-orange" />
+        {/* Decorative pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 left-1/4 w-64 h-64 bg-white rounded-full blur-3xl" />
+          <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-white rounded-full blur-3xl" />
+        </div>
+
+        <div className="max-w-4xl mx-auto px-4 md:px-8 text-center relative z-10">
           <motion.h2 
             variants={reduced ? {} : fadeUp}
             initial="hidden"
@@ -246,9 +255,10 @@ export default function SolutionsPage() {
               href={generateWhatsAppLink("Halo, saya ingin konsultasi mengenai solusi chemical untuk perusahaan saya.")}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto bg-green hover:bg-green-dark text-white font-bold px-8 py-4 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-500 ease-out flex items-center justify-center gap-2"
+              className="w-full sm:w-auto bg-white hover:bg-gray-100 text-gray-900 font-bold px-8 py-4 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-500 ease-out flex items-center justify-center gap-2"
             >
-              Konsultasi Gratis via WhatsApp
+              <FaWhatsapp className="w-5 h-5 text-green" />
+              Konsultasi Gratis
               <ArrowRight className="w-5 h-5" />
             </a>
             <Link 

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Mail, Phone, MapPin, Clock } from 'lucide-react'
 import { FaWhatsapp } from 'react-icons/fa'
 import { COMPANY } from '@/lib/constants'
@@ -29,10 +30,14 @@ export function Footer() {
           {/* Column 1: Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-amber to-orange flex items-center justify-center">
-                <span className="text-white font-bold text-sm">IN</span>
+              <div className="relative w-32 h-10 sm:w-40 sm:h-12">
+                <Image
+                  src="/images/logo-Incaf-transparant.png"
+                  alt="PT. Incaf Nutri Solusindo Logo"
+                  fill
+                  className="object-contain object-left filter brightness-0 invert"
+                />
               </div>
-              <span className="font-bold text-lg">{COMPANY.name.replace('PT. ', '')}</span>
             </div>
             <p className="text-white/60 text-sm leading-relaxed">
               {COMPANY.tagline}

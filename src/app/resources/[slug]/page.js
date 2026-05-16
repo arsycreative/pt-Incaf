@@ -50,7 +50,7 @@ function parseMarkdownToHTML(markdownText) {
       return block
     }
     return `<p>${block.trim()}</p>`
-  }).join('\\n')
+  }).join('\n')
 
   return html
 }

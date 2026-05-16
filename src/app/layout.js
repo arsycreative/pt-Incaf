@@ -1,13 +1,19 @@
-import { Plus_Jakarta_Sans } from 'next/font/google'
+import { Plus_Jakarta_Sans, Playfair_Display } from 'next/font/google'
 import { SmoothScrollProvider } from '@/components/layout/SmoothScrollProvider'
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
 import { FloatingWhatsApp } from '@/components/layout/FloatingWhatsApp'
 import './globals.css'
 
-const font = Plus_Jakarta_Sans({
+const fontSans = Plus_Jakarta_Sans({
   subsets: ['latin'],
   variable: '--font-sans',
+  display: 'swap',
+})
+
+const fontSerif = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-serif',
   display: 'swap',
 })
 
@@ -26,8 +32,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="id" className={`${font.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col font-sans">
+    <html lang="id" className={`${fontSans.variable} ${fontSerif.variable} antialiased`}>
+      <body className="flex flex-col font-sans">
         <SmoothScrollProvider>
           <Navbar />
           <main className="flex-1">{children}</main>

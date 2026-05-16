@@ -6,7 +6,7 @@ export function ProductCard({ product }) {
   const category = PRODUCT_CATEGORIES.find((c) => c.id === product.categoryId) || PRODUCT_CATEGORIES[0]
   
   return (
-    <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex flex-col h-full hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-500 ease-out group">
+    <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100/50 flex flex-col h-full hover:shadow-premium hover:-translate-y-1.5 transition-all duration-500 ease-out group">
       
       {/* Category & Group Badges */}
       <div className="flex flex-wrap items-center gap-2 mb-4">
@@ -19,7 +19,7 @@ export function ProductCard({ product }) {
       </div>
 
       {/* Product Name */}
-      <h3 className="font-bold text-lg text-gray-900 mb-4 group-hover:text-navy transition-colors">
+      <h3 className="font-serif font-bold text-xl text-gray-900 mb-4 group-hover:text-navy transition-colors">
         {product.name}
       </h3>
 

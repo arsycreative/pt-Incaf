@@ -52,7 +52,7 @@ export function HeroSection() {
             initial="hidden"
             animate="show"
             custom={1}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
+            className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
           >
             Solusi{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber to-orange">

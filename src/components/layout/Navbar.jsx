@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, ChevronDown } from 'lucide-react'
 import { FaWhatsapp } from 'react-icons/fa'
@@ -13,6 +15,10 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [dropdownOpen, setDropdownOpen] = useState(false)
+  const pathname = usePathname()
+
+  // Determine if the current page has a white background at the very top
+  const isLightPage = pathname?.startsWith('/resources/') && pathname !== '/resources'
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50)
@@ -23,9 +29,9 @@ export function Navbar() {
   return (
     <header
       className={cn(
-        'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
+        'fixed top-0 left-0 right-0 z-50 transition-all duration-500',
         scrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-md'
+          ? 'bg-white/80 backdrop-blur-xl shadow-premium'
           : 'bg-transparent'
       )}
     >
@@ -34,16 +40,22 @@ export function Navbar() {
         <Link href="/" className="flex items-center gap-2 shrink-0">
           <div
             className={cn(
-              'flex items-center gap-2 transition-colors duration-300',
-              scrolled ? 'text-navy' : 'text-white'
+              'flex items-center gap-2 transition-all duration-300',
+              scrolled ? 'opacity-100' : 'opacity-90 hover:opacity-100'
             )}
           >
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-amber to-orange flex items-center justify-center">
-              <span className="text-white font-bold text-sm">IN</span>
+            <div className="relative w-32 h-10 sm:w-40 sm:h-12">
+              <Image
+                src="/images/logo-Incaf-transparant.png"
+                alt="PT. Incaf Nutri Solusindo Logo"
+                fill
+                className={cn(
+                  "object-contain object-left transition-all duration-300",
+                  (!scrolled && !isLightPage) && "filter brightness-0 invert opacity-90"
+                )}
+                priority
+              />
             </div>
-            <span className="font-bold text-lg tracking-tight hidden sm:block">
-              {COMPANY.name.replace('PT. ', '')}
-            </span>
           </div>
         </Link>
 
@@ -60,7 +72,7 @@ export function Navbar() {
                 href={item.href}
                 className={cn(
                   'px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200 flex items-center gap-1',
-                  scrolled
+                  (scrolled || isLightPage)
                     ? 'text-gray-700 hover:text-navy hover:bg-navy/5'
                     : 'text-white/80 hover:text-white hover:bg-white/10'
                 )}
@@ -117,7 +129,7 @@ export function Navbar() {
           onClick={() => setMobileOpen(!mobileOpen)}
           className={cn(
             'lg:hidden p-2 rounded-lg transition-colors',
-            scrolled ? 'text-navy' : 'text-white'
+            (scrolled || isLightPage) ? 'text-navy' : 'text-white'
           )}
           aria-label="Toggle navigation menu"
         >
