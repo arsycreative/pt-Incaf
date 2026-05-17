@@ -249,7 +249,7 @@ export default function ContactPage() {
               {/* Trust block */}
               <motion.div variants={reduced ? {} : fadeUp} className="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm text-center">
                 <p className="text-gray-600 italic">
-                  "Kami berkomitmen memberikan respons cepat dan dukungan teknis penuh untuk setiap mitra bisnis kami."
+                  &ldquo;Kami berkomitmen memberikan respons cepat dan dukungan teknis penuh untuk setiap mitra bisnis kami.&rdquo;
                 </p>
               </motion.div>
 

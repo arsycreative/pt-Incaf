@@ -11,7 +11,7 @@ const steps = [
     title: 'Seleksi & Importasi Produk',
     description:
       'Kami bermitra dengan lebih dari 10 supplier global terpercaya — dari China, India, Eropa, hingga Korea — untuk mendapatkan bahan kimia dengan spesifikasi terbaik dan harga yang kompetitif.',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2070',
+    image: '/images/process-global-sourcing.png',
     alt: 'Proses importasi dan seleksi produk chemical dari supplier global',
   },
   {

@@ -34,8 +34,8 @@ export function VisionMission() {
             </div>
             
             <p className="text-2xl md:text-3xl font-semibold text-navy leading-snug">
-              "Menjadi perusahaan importir dan distributor speciality chemical paling terpercaya 
-              dan solutif di Indonesia."
+              &ldquo;Menjadi perusahaan importir dan distributor speciality chemical paling terpercaya
+              dan solutif di Indonesia.&rdquo;
             </p>
           </motion.div>
 
