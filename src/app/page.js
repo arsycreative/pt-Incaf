@@ -6,6 +6,7 @@ import { AdvantagesSection } from '@/components/home/AdvantagesSection'
 import { ProcessSection } from '@/components/home/ProcessSection'
 import { FeaturedProductsSection } from '@/components/home/FeaturedProductsSection'
 import { TrustSection } from '@/components/home/TrustSection'
+import { SuppliersSection } from '@/components/home/SuppliersSection'
 import { CTASection } from '@/components/home/CTASection'
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <AdvantagesSection />
       <ProcessSection />
       <FeaturedProductsSection />
+      <SuppliersSection />
       <TrustSection />
       <CTASection />
     </>

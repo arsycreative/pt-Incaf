@@ -29,7 +29,7 @@ const steps = [
     title: 'Pengiriman ke Seluruh Indonesia',
     description:
       'Jaringan logistik kami memastikan produk tiba tepat waktu ke mana pun di Indonesia. Disertai after-sales support teknis yang responsif dan konsultasi formulasi lanjutan.',
-    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070',
+    image: '/images/distribution-logistics.png',
     alt: 'Distribusi dan pengiriman chemical ke seluruh Indonesia',
   },
 ]

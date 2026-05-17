@@ -49,22 +49,7 @@ export function TrustSection() {
   const inView = useInView(ref, { once: true, margin: '-100px' })
 
   return (
-    <section id="trust" className="relative py-24 overflow-hidden" ref={ref}>
-      {/* Dark navy background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-navy-dark via-navy to-navy-dark" />
-      
-      {/* Decorative orbs */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-amber rounded-full blur-[120px] opacity-10 -translate-y-1/2 translate-x-1/3 pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-80 h-80 bg-green rounded-full blur-[100px] opacity-10 translate-y-1/2 -translate-x-1/3 pointer-events-none" />
-      
-      {/* Dot pattern */}
-      <div 
-        className="absolute inset-0 opacity-[0.04]"
-        style={{
-          backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)',
-          backgroundSize: '32px 32px',
-        }}
-      />
+    <section id="trust" className="relative py-24 overflow-hidden bg-white" ref={ref}>
 
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
         {/* Section Header */}
@@ -84,7 +69,7 @@ export function TrustSection() {
             whileInView="show"
             viewport={{ once: true }}
             custom={1}
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
           >
             Dipercaya oleh Pelaku Industri
           </motion.h2>
@@ -94,14 +79,14 @@ export function TrustSection() {
             whileInView="show"
             viewport={{ once: true }}
             custom={2}
-            className="text-white/60 max-w-2xl mx-auto text-lg"
+            className="text-gray-500 max-w-2xl mx-auto text-lg"
           >
             Angka-angka yang mencerminkan komitmen kami dalam menyediakan solusi
             speciality chemical terbaik untuk industri Indonesia.
           </motion.p>
         </div>
 
-        {/* Stats Grid — Glass Cards */}
+        {/* Stats Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto mb-20">
           {stats.map((stat, i) => {
             const Icon = stat.icon
@@ -113,13 +98,13 @@ export function TrustSection() {
                 whileInView="show"
                 viewport={{ once: true }}
                 custom={i}
-                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center group hover:bg-white/10 transition-all duration-500"
+                className="bg-white border border-gray-100 shadow-sm rounded-2xl p-8 text-center group hover:shadow-xl hover:-translate-y-1 transition-all duration-500"
               >
-                <div className="w-14 h-14 rounded-xl bg-white/10 flex items-center justify-center mx-auto mb-5
+                <div className="w-14 h-14 rounded-xl bg-navy/5 flex items-center justify-center mx-auto mb-5
                                 group-hover:bg-green group-hover:scale-110 transition-all duration-500">
-                  <Icon className="w-7 h-7 text-white/70 group-hover:text-white transition-colors duration-500" />
+                  <Icon className="w-7 h-7 text-navy/60 group-hover:text-white transition-colors duration-500" />
                 </div>
-                <div className="text-4xl md:text-5xl font-bold text-white mb-2">
+                <div className="text-4xl md:text-5xl font-bold text-navy mb-2">
                   {reduced ? (
                     <span>{stat.value}{stat.suffix}</span>
                   ) : (
@@ -127,7 +112,7 @@ export function TrustSection() {
                   )}
                 </div>
                 <div className="w-10 h-0.5 bg-gradient-to-r from-amber to-orange mx-auto mb-3 rounded-full" />
-                <div className="text-white/50 text-sm font-medium uppercase tracking-widest">
+                <div className="text-gray-400 text-sm font-medium uppercase tracking-widest">
                   {stat.label}
                 </div>
               </motion.div>
@@ -135,7 +120,7 @@ export function TrustSection() {
           })}
         </div>
 
-        {/* Trust Pillars — Horizontal Strip */}
+        {/* Trust Pillars */}
         <motion.div
           variants={reduced ? {} : stagger}
           initial="hidden"
@@ -150,14 +135,14 @@ export function TrustSection() {
                 key={pillar.label}
                 variants={reduced ? {} : fadeUp}
                 custom={i}
-                className="flex items-center gap-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl px-6 py-5 hover:bg-white/10 transition-all duration-300"
+                className="flex items-center gap-4 bg-gray-50 border border-gray-100 rounded-2xl px-6 py-5 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300"
               >
-                <div className="w-12 h-12 rounded-xl bg-green/20 flex items-center justify-center shrink-0">
+                <div className="w-12 h-12 rounded-xl bg-green/10 flex items-center justify-center shrink-0">
                   <Icon className="w-6 h-6 text-green" />
                 </div>
                 <div>
-                  <div className="text-white font-semibold text-sm">{pillar.label}</div>
-                  <div className="text-white/50 text-xs mt-0.5">{pillar.desc}</div>
+                  <div className="text-gray-900 font-semibold text-sm">{pillar.label}</div>
+                  <div className="text-gray-400 text-xs mt-0.5">{pillar.desc}</div>
                 </div>
               </motion.div>
             )

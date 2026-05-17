@@ -6,7 +6,7 @@ export const ARTICLES = [
     category: 'Food Industry',
     date: '12 Mei 2026',
     readTime: '4 min read',
-    image: 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=2070',
+    image: '/images/articles/xanthan-gum-industri-pangan.png',
     content: `
 Xanthan gum adalah salah satu inovasi paling penting dalam industri teknologi pangan modern. Ditemukan pada tahun 1950-an oleh ilmuwan USDA, bahan ini kini menjadi andalan di hampir setiap dapur komersial dan pabrik pengolahan makanan di seluruh dunia.
 
