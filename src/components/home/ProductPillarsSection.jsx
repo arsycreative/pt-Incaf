@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion, useReducedMotion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
 import { fadeUp, stagger } from '@/lib/animations'
@@ -10,10 +11,10 @@ export function ProductPillarsSection() {
   const reduced = useReducedMotion()
 
   return (
-    <section id="product-pillars" className="py-20 bg-white">
+    <section id="product-pillars" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         {/* Section Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <motion.span
             variants={reduced ? {} : fadeUp}
             initial="hidden"
@@ -58,21 +59,27 @@ export function ProductPillarsSection() {
             const Icon = cat.icon
             return (
               <motion.div key={cat.title} variants={reduced ? {} : fadeUp} custom={i}>
-                <Link href={cat.href} className="block group">
-                  <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-gray-100
-                                  hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-500 ease-out h-full">
-                    <div className={`w-12 h-12 rounded-xl ${cat.bgColor} flex items-center justify-center mb-5`}>
-                      <Icon className={`w-6 h-6 ${cat.color}`} />
+                <Link href={cat.href} className="group relative block overflow-hidden rounded-3xl h-[450px]">
+                  <Image
+                    src={cat.image || '/images/placeholder.jpg'}
+                    alt={cat.title}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-6 flex flex-col justify-end">
+                    <div className={`w-12 h-12 rounded-xl bg-white/10 backdrop-blur-md flex items-center justify-center mb-4 text-white`}>
+                      <Icon className="w-6 h-6" />
                     </div>
-                    <h3 className="font-bold text-lg text-gray-900 mb-2 group-hover:text-navy transition-colors">
+                    <h3 className="font-bold text-xl text-white mb-2">
                       {cat.title}
                     </h3>
-                    <p className="text-gray-500 text-sm leading-relaxed mb-4">
+                    <p className="text-gray-200 text-sm leading-relaxed mb-4 opacity-80 line-clamp-2">
                       {cat.description}
                     </p>
-                    <span className="inline-flex items-center gap-1 text-sm font-semibold text-navy opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-500 ease-out">
-                      Lihat Produk
-                      <ArrowRight className="w-3.5 h-3.5" />
+                    <span className="inline-flex items-center gap-2 text-sm font-semibold text-white group-hover:gap-3 transition-all duration-300">
+                      Pelajari lebih lanjut
+                      <ArrowRight className="w-4 h-4" />
                     </span>
                   </div>
                 </Link>

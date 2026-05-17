@@ -15,6 +15,7 @@ export const PRODUCT_CATEGORIES = [
     color: 'text-amber-500',
     bgColor: 'bg-amber-500/10',
     solidColor: 'bg-amber-500',
+    image: 'https://images.unsplash.com/photo-1606787366850-de6330128bfc?q=80&w=1200',
   },
   {
     id: 'feed-additive',
@@ -25,6 +26,7 @@ export const PRODUCT_CATEGORIES = [
     color: 'text-green',
     bgColor: 'bg-green/10',
     solidColor: 'bg-green',
+    image: 'https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?q=80&w=1200',
   },
   {
     id: 'fertilizer',
@@ -35,6 +37,7 @@ export const PRODUCT_CATEGORIES = [
     color: 'text-emerald-500',
     bgColor: 'bg-emerald-500/10',
     solidColor: 'bg-emerald-500',
+    image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=1200',
   },
   {
     id: 'general-chemical',
@@ -45,6 +48,7 @@ export const PRODUCT_CATEGORIES = [
     color: 'text-navy',
     bgColor: 'bg-navy/10',
     solidColor: 'bg-navy',
+    image: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?q=80&w=1200',
   },
 ]
 
