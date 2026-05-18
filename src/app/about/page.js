@@ -17,7 +17,7 @@ export default function AboutPage() {
         title="Tentang PT. Incaf Nutri Solusindo"
         subtitle="Lebih dari sekadar supplier — kami adalah mitra bisnis jangka panjang Anda."
         breadcrumbCurrent="Tentang Kami"
-        imageSrc="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070"
+        imageSrc="/about-hero-warehouse.png"
         waveColor="text-white"
       />
       <CompanyStory />
