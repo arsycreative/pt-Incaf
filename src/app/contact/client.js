@@ -39,7 +39,7 @@ export default function ContactPage() {
         title="Ayo Mulai Diskusi"
         subtitle="Ceritakan kebutuhan operasional Anda, dan tim kami akan membantu menemukan solusi chemical terbaik."
         breadcrumbCurrent="Hubungi Kami"
-        imageSrc="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070"
+        imageSrc="/contact_hero.png"
       />
 
       <section className="py-20 bg-gray-50 min-h-screen">
