@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
-import { Mail, Phone, MapPin, Clock, Send, ShieldCheck } from 'lucide-react'
+import { Mail, Phone, MapPin, Clock, Send, ShieldCheck, Warehouse } from 'lucide-react'
 import { PageHeader } from '@/components/ui/PageHeader'
 import { fadeUp, stagger } from '@/lib/animations'
 import { COMPANY } from '@/lib/constants'
@@ -205,6 +205,21 @@ export default function ContactPage() {
                       <h4 className="font-semibold text-lg mb-1">Kantor Pusat</h4>
                       <p className="text-white/70 leading-relaxed text-sm">
                         {COMPANY.address}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Alamat Gudang */}
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center shrink-0">
+                      <Warehouse className="w-6 h-6 text-green-light" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-lg mb-1">Gudang</h4>
+                      <p className="text-white/70 leading-relaxed text-sm">
+                        Jl. Mawar No.12, RT.004/RW.002, Padurenan,<br />
+                        Kec. Mustika Jaya, Kota Bks,<br />
+                        Jawa Barat 17156
                       </p>
                     </div>
                   </div>
