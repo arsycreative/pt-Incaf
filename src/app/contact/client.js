@@ -231,9 +231,14 @@ export default function ContactPage() {
                     <div>
                       <h4 className="font-semibold text-lg mb-1">Telepon & WhatsApp</h4>
                       <p className="text-white/70 text-sm mb-1">{COMPANY.phone}</p>
-                      <a href={`https://wa.me/${COMPANY.whatsapp}`} className="text-green-light hover:text-white font-medium text-sm transition-colors">
-                        +62 813-1002-831 (WhatsApp)
-                      </a>
+                      <div className="flex flex-col gap-1">
+                        <a href={`https://wa.me/${COMPANY.whatsapp}`} className="text-green-light hover:text-white font-medium text-sm transition-colors">
+                          +62 813-1002-831 (WhatsApp)
+                        </a>
+                        <a href={`https://wa.me/${COMPANY.whatsapp2}`} className="text-green-light hover:text-white font-medium text-sm transition-colors">
+                          +62 815-7510-1093 (WhatsApp)
+                        </a>
+                      </div>
                     </div>
                   </div>
 
@@ -243,9 +248,14 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-lg mb-1">Email</h4>
-                      <a href={`mailto:${COMPANY.email}`} className="text-white/70 hover:text-white text-sm transition-colors">
-                        {COMPANY.email}
-                      </a>
+                      <div className="flex flex-col gap-1">
+                        <a href={`mailto:${COMPANY.email}`} className="text-white/70 hover:text-white text-sm transition-colors">
+                          {COMPANY.email}
+                        </a>
+                        <a href={`mailto:${COMPANY.email2}`} className="text-white/70 hover:text-white text-sm transition-colors">
+                          {COMPANY.email2}
+                        </a>
+                      </div>
                     </div>
                   </div>
 

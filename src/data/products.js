@@ -161,7 +161,7 @@ export const ALL_PRODUCTS = [
   
   { id: 'fe3', name: 'Choline Chloride 60% / 75%', categoryId: 'feed-additive', group: 'Binders & Additives', origin: 'China', packaging: 'Zak 25kg / Liquid' },
   { id: 'fe4', name: 'Calcium Formate & Propionate', categoryId: 'feed-additive', group: 'Binders & Additives', origin: 'China', packaging: 'Zak 25kg' },
-  { id: 'fe5', name: 'Sepiolite & Soybean Lecithin', categoryId: 'feed-additive', group: 'Binders & Additives', origin: 'Spain / India', packaging: 'Zak 25kg / Drum' },
+  { id: 'fe5', name: 'Soybean Lecithin', categoryId: 'feed-additive', group: 'Binders & Additives', origin: 'India', packaging: 'Drum' },
   
   { id: 'fe6', name: 'L-Ascorbate Monophosphate 35%', categoryId: 'feed-additive', group: 'Vitamins & Acids', origin: 'China', packaging: 'Carton 25kg' },
   { id: 'fe7', name: 'Nicotinic Acid & Bile Acid', categoryId: 'feed-additive', group: 'Vitamins & Acids', origin: 'China', packaging: 'Drum 25kg' },

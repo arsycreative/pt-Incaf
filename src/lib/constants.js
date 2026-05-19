@@ -2,9 +2,12 @@ export const COMPANY = {
   name: 'PT. Incaf Nutri Solusindo',
   tagline: 'Indonesia Chemical of Agriculture, Food & Feed Speciality',
   email: 'contact@ptincaf.com',
+  email2: 'sales@ptincaf.com',
   phone: '(021) 29021873',
   whatsapp: '6208131002831',
   whatsappDisplay: '08131002831',
+  whatsapp2: '6281575101093',
+  whatsappDisplay2: '081575101093',
   address:
     'CHR OFFICE Lt. 9 Unit O, Grand Slipi Tower, Jl. Jend. S. Parman Kav 22–24, Jakarta Barat 11480',
   hours: 'Senin–Jumat, 08.00–17.00 WIB',

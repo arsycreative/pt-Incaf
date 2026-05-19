@@ -91,20 +91,35 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-2.5">
                 <Mail className="w-4 h-4 text-white/40 mt-0.5 shrink-0" />
-                <a href={`mailto:${COMPANY.email}`} className="text-white/60 hover:text-white text-sm transition-colors">
-                  {COMPANY.email}
-                </a>
+                <div className="flex flex-col gap-1">
+                  <a href={`mailto:${COMPANY.email}`} className="text-white/60 hover:text-white text-sm transition-colors">
+                    {COMPANY.email}
+                  </a>
+                  <a href={`mailto:${COMPANY.email2}`} className="text-white/60 hover:text-white text-sm transition-colors">
+                    {COMPANY.email2}
+                  </a>
+                </div>
               </li>
               <li className="flex items-start gap-2.5">
                 <FaWhatsapp className="w-4 h-4 text-white/40 mt-0.5 shrink-0" />
-                <a
-                  href={`https://wa.me/${COMPANY.whatsapp}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white/60 hover:text-white text-sm transition-colors"
-                >
-                  {COMPANY.whatsappDisplay}
-                </a>
+                <div className="flex flex-col gap-1">
+                  <a
+                    href={`https://wa.me/${COMPANY.whatsapp}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white/60 hover:text-white text-sm transition-colors"
+                  >
+                    {COMPANY.whatsappDisplay}
+                  </a>
+                  <a
+                    href={`https://wa.me/${COMPANY.whatsapp2}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white/60 hover:text-white text-sm transition-colors"
+                  >
+                    {COMPANY.whatsappDisplay2}
+                  </a>
+                </div>
               </li>
               <li className="flex items-start gap-2.5">
                 <Phone className="w-4 h-4 text-white/40 mt-0.5 shrink-0" />
